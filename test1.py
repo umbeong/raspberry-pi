@@ -1,22 +1,22 @@
-import RPi.GPIO   GPIO
+import RPi.GPIO as GPIO
+from time import sleep
 
-GPIO.setwarnings ( false )
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
-GPIO.setting ( 18 ,GPIO.OUT )
+GPIO.setup ( 40 ,GPIO.OUT )
 
-while the truth:
+while True:
 
-  GPIO.output ( 18 ,GPIO.HIGH )
+  GPIO.output ( 40 ,GPIO.HIGH )
 
-  Print ( "LED on" )
+  print ( "LED on" )
 
   sleep ( 1 )
 
-  GPIO.OUTPUT ( 18 ,GPIO.LOW )
+  GPIO.output ( 40 ,GPIO.LOW )
 
-  Print ( "LED off" )
+  print ( "LED off" )
 
   sleep ( 1 )
 
